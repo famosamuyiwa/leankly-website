@@ -5,11 +5,11 @@ interface PrivacyPolicyProps {
   onNavigate: (page: string) => void;
 }
 
-function PrivacyPolicy({ onNavigate }: PrivacyPolicyProps) {
+function PrivacyPolicy({ onNavigate: _onNavigate }: PrivacyPolicyProps) {
   return (
     <>
       {/* Navigation */}
-      <Navigation onNavigate={onNavigate} currentPage="privacy" />
+      <Navigation currentPage="privacy" />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 gradient-bg">
@@ -23,7 +23,7 @@ function PrivacyPolicy({ onNavigate }: PrivacyPolicyProps) {
               collect, use, and protect your personal information.
             </p>
             <div className="text-sm text-black-100">
-              <p>Last updated: January 2025</p>
+              <p>Last updated: November 2025</p>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ function PrivacyPolicy({ onNavigate }: PrivacyPolicyProps) {
                 1. Introduction
               </h2>
               <p className="text-black-100 mb-4">
-                Percher ("we," "our," or "us") is committed to protecting your
+                Leankly ("we," "our," or "us") is committed to protecting your
                 privacy. This Privacy Policy explains how we collect, use,
                 disclose, and safeguard your information when you use our mobile
                 application and related services (collectively, the "Service").
@@ -340,7 +340,7 @@ function PrivacyPolicy({ onNavigate }: PrivacyPolicyProps) {
       </section>
 
       {/* Footer */}
-      <Footer onNavigate={onNavigate} />
+      <Footer />
     </>
   );
 }

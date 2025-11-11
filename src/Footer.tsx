@@ -1,56 +1,36 @@
-interface FooterProps {
-  onNavigate?: (page: string) => void;
-}
+import { Link } from "react-router-dom";
 
-function Footer({ onNavigate }: FooterProps) {
-  const handleNavigation = (page: string) => {
-    if (onNavigate) {
-      onNavigate(page);
-    }
-  };
-
+function Footer() {
   return (
     <footer className="bg-secondary-300 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Percher</h3>
-            <p className="text-gray-300">Find your perfect rental property.</p>
+            <h3 className="text-2xl font-bold mb-4">Leankly</h3>
+            <p className="text-gray-300">Side quests unlocked.</p>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => handleNavigation("about")}
-                  className="text-gray-300 hover:text-white"
-                >
+                <Link to="/about" className="text-gray-300 hover:text-white">
                   About Us
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavigation("contact")}
-                  className="text-gray-300 hover:text-white"
-                >
+                <Link to="/contact" className="text-gray-300 hover:text-white">
                   Contact
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavigation("privacy")}
-                  className="text-gray-300 hover:text-white"
-                >
+                <Link to="/privacy" className="text-gray-300 hover:text-white">
                   Privacy Policy
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavigation("terms")}
-                  className="text-gray-300 hover:text-white"
-                >
+                <Link to="/terms" className="text-gray-300 hover:text-white">
                   Terms of Service
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -69,7 +49,7 @@ function Footer({ onNavigate }: FooterProps) {
               />
             </a>
             <a
-              href="https://x.com/percherapp"
+              href="https://x.com/leanklyapp"
               target="_blank"
               className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity"
             >
@@ -80,7 +60,7 @@ function Footer({ onNavigate }: FooterProps) {
               />
             </a>
             <a
-              href="https://www.instagram.com/percher.app"
+              href="https://www.instagram.com/leanklyapp"
               target="_blank"
               className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity"
             >
@@ -91,7 +71,7 @@ function Footer({ onNavigate }: FooterProps) {
               />
             </a>
             <a
-              href="https://www.tiktok.com/@percherapp"
+              href="https://www.tiktok.com/@leanklyapp"
               target="_blank"
               className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity"
             >
@@ -102,7 +82,7 @@ function Footer({ onNavigate }: FooterProps) {
               />
             </a>
           </div>
-          <p>&copy; 2025 Percher. All rights reserved.</p>
+          <p>&copy; 2025 Leankly. All rights reserved.</p>
         </div>
       </div>
     </footer>

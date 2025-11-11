@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Gradient colors */
+  --gradient-start: #06b6d4;
+  --gradient-mid: #1cb0f7;
+  --gradient-end: #ff5f6d;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,5 +23,21 @@ body {
   background: linear-gradient(135deg, #00bfff0a 0%, #ff7f500a 100%);
 }
 
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
 
-
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-mid),
+    var(--gradient-end)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}

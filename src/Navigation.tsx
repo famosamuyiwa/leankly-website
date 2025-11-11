@@ -1,22 +1,24 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 interface NavigationProps {
-  onNavigate?: (page: string) => void;
   currentPage?: string;
 }
 
-function Navigation({ onNavigate, currentPage }: NavigationProps) {
+function Navigation({ currentPage }: NavigationProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const handleNavigation = (page: string) => {
-    if (onNavigate) {
-      onNavigate(page);
-    }
-    setIsMenuOpen(false); // Close mobile menu after navigation
+  const getCurrentPage = () => {
+    if (currentPage) return currentPage;
+    const path = location.pathname;
+    if (path === "/about") return "about";
+    if (path === "/contact") return "contact";
+    return "home";
   };
 
   const isCurrentPage = (page: string) => {
-    return currentPage === page;
+    return getCurrentPage() === page;
   };
 
   const toggleMenu = () => {
@@ -27,18 +29,16 @@ function Navigation({ onNavigate, currentPage }: NavigationProps) {
     <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <img
-              src="https://cdn.percher.africa/percher-logo-full.png"
-              width="120px"
-            />
-          </div>
+          <Link to="/" className="logo">
+            <span className="gradient-text">Leankly</span>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              <button
-                onClick={() => handleNavigation("home")}
+              <Link
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
                 className={`${
                   isCurrentPage("home")
                     ? "text-primary-300"
@@ -46,9 +46,10 @@ function Navigation({ onNavigate, currentPage }: NavigationProps) {
                 } transition-colors`}
               >
                 Home
-              </button>
-              <button
-                onClick={() => handleNavigation("about")}
+              </Link>
+              <Link
+                to="/about"
+                onClick={() => setIsMenuOpen(false)}
                 className={`${
                   isCurrentPage("about")
                     ? "text-primary-300"
@@ -56,9 +57,10 @@ function Navigation({ onNavigate, currentPage }: NavigationProps) {
                 } transition-colors`}
               >
                 About Us
-              </button>
-              <button
-                onClick={() => handleNavigation("contact")}
+              </Link>
+              <Link
+                to="/contact"
+                onClick={() => setIsMenuOpen(false)}
                 className={`${
                   isCurrentPage("contact")
                     ? "text-primary-300"
@@ -66,7 +68,7 @@ function Navigation({ onNavigate, currentPage }: NavigationProps) {
                 } transition-colors`}
               >
                 Contact
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -89,8 +91,9 @@ function Navigation({ onNavigate, currentPage }: NavigationProps) {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md shadow-lg border-t border-gray-200">
-            <button
-              onClick={() => handleNavigation("home")}
+            <Link
+              to="/"
+              onClick={() => setIsMenuOpen(false)}
               className={`${
                 isCurrentPage("home")
                   ? "bg-primary-50 text-primary-300"
@@ -98,9 +101,10 @@ function Navigation({ onNavigate, currentPage }: NavigationProps) {
               } block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors`}
             >
               Home
-            </button>
-            <button
-              onClick={() => handleNavigation("about")}
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setIsMenuOpen(false)}
               className={`${
                 isCurrentPage("about")
                   ? "bg-primary-50 text-primary-300"
@@ -108,9 +112,10 @@ function Navigation({ onNavigate, currentPage }: NavigationProps) {
               } block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors`}
             >
               About Us
-            </button>
-            <button
-              onClick={() => handleNavigation("contact")}
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setIsMenuOpen(false)}
               className={`${
                 isCurrentPage("contact")
                   ? "bg-primary-50 text-primary-300"
@@ -118,7 +123,7 @@ function Navigation({ onNavigate, currentPage }: NavigationProps) {
               } block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors`}
             >
               Contact
-            </button>
+            </Link>
           </div>
         </div>
       )}

@@ -5,23 +5,24 @@ interface AboutUsProps {
   onNavigate: (page: string) => void;
 }
 
-function AboutUs({ onNavigate }: AboutUsProps) {
+function AboutUs({ onNavigate: _onNavigate }: AboutUsProps) {
   return (
     <>
       {/* Navigation */}
-      <Navigation onNavigate={onNavigate} currentPage="about" />
+      <Navigation currentPage="about" />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 gradient-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-secondary-300 mb-6">
-              About <span className="text-primary-300">Percher</span>
+              About <span className="text-primary-300">Leankly</span>
             </h1>
             <p className="text-xl text-black-100 mb-12 max-w-3xl mx-auto">
-              We're revolutionizing the rental market in Africa by connecting
-              people with their perfect spaces through technology, transparency,
-              and trust.
+              We're revolutionizing how people connect and share adventures by
+              turning everyday experiences into epic side quests. Join the
+              community that's making life more interesting, one leank at a
+              time.
             </p>
           </div>
         </div>
@@ -36,42 +37,42 @@ function AboutUs({ onNavigate }: AboutUsProps) {
                 Our Mission
               </h2>
               <p className="text-lg text-black-100 mb-6">
-                At Percher, we believe everyone deserves to find their perfect
-                space without the stress, scams, and uncertainty that often
-                comes with traditional rental processes.
+                At Leankly, we believe that life is meant to be lived, not just
+                experienced alone. We're on a mission to transform how people
+                connect, explore, and create memories together.
               </p>
               <p className="text-lg text-black-100 mb-6">
-                We're building Africa's most trusted rental platform by
-                combining cutting-edge technology with human-centered design,
-                ensuring both renters and property owners have a seamless,
-                secure, and transparent experience.
+                We're building the world's most trusted side questing platform
+                by combining cutting-edge technology with human-centered design,
+                ensuring that every leank is safe, fun, and meaningful. Whether
+                you're trying a new restaurant, exploring a hiking trail, or
+                learning something new, we make it easy to find your adventure
+                party.
               </p>
               <p className="text-lg text-black-100 mb-6">
-                The goal is to have onboarded 10,000+ users and 5,000+
-                properties by the end of 2026.
+                Our goal is to connect 100,000+ leankers and create 50,000+
+                unforgettable adventures by the end of 2026.
               </p>
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary-300 mb-2">
-                    10K+
+                    100K+
                   </div>
-                  <div className="text-black-100">Happy Users</div>
+                  <div className="text-black-100">Active Leankers</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary-300 mb-2">
-                    5K+
+                    50K+
                   </div>
-                  <div className="text-black-100">Properties Listed</div>
+                  <div className="text-black-100">Leanks Created</div>
                 </div>
               </div>
             </div>
             <div className="relative">
               <div className="aspect-square p-4 rounded-3xl bg-gradient-to-br from-primary-100 to-accent-100 flex items-center justify-center">
-                <img
-                  src="/assets/images/houses.png"
-                  alt="houses"
-                  className="w-full h-full object-contain"
-                />
+                <span className="material-symbols-rounded text-9xl text-primary-300">
+                  travel_explore
+                </span>
               </div>
             </div>
           </div>
@@ -95,12 +96,12 @@ function AboutUs({ onNavigate }: AboutUsProps) {
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-secondary-300 mb-3">
-                Trust & Transparency
+                Safety First
               </h3>
               <p className="text-black-100">
-                We believe in building trust through complete transparency.
-                Every listing is verified, every host is screened, and every
-                transaction is secure.
+                Your safety is our top priority. Every user is verified, every
+                leank is monitored, and we provide tools to help you connect
+                safely with others.
               </p>
             </div>
             <div className="p-6 rounded-2xl bg-white shadow-lg">
@@ -116,8 +117,9 @@ function AboutUs({ onNavigate }: AboutUsProps) {
                 Community First
               </h3>
               <p className="text-black-100">
-                We're not just a platform; we're a community. We listen to our
-                users, adapt to their needs, and grow together.
+                We're not just a platform; we're a community of adventurers. We
+                listen to our leankers, adapt to their needs, and grow together
+                through shared experiences.
               </p>
             </div>
             <div className="p-6 rounded-2xl bg-white shadow-lg">
@@ -130,12 +132,12 @@ function AboutUs({ onNavigate }: AboutUsProps) {
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-secondary-300 mb-3">
-                Innovation
+                Adventure Awaits
               </h3>
               <p className="text-black-100">
-                We constantly push boundaries to create the best possible
-                experience for our users, leveraging the latest technology and
-                design principles.
+                We believe every day holds the potential for adventure. We
+                constantly innovate to make it easier to discover new
+                experiences, meet new people, and create unforgettable memories.
               </p>
             </div>
           </div>
@@ -150,39 +152,28 @@ function AboutUs({ onNavigate }: AboutUsProps) {
               Our Vision
             </h2>
             <p className="text-lg text-black-100 max-w-4xl mx-auto">
-              Percher was born from a simple frustration: finding a rental
-              property in Africa shouldn't be this hard. Our founders
-              experienced firsthand the challenges of navigating unreliable
-              listings, unresponsive agents, and the constant fear of scams. Our
-              vision is to be the leading rental platform in Africa, providing a
-              seamless and secure experience for both renters and property
-              owners. We aim to make renting in Africa easy, transparent, and
-              hassle-free.
+              Leankly was born from a simple idea: life is your main story, and
+              side quests make it more interesting. Our founders experienced
+              firsthand how hard it can be to find people who share your
+              interests or want to try new things. Our vision is to be the
+              leading platform for spontaneous adventures and meaningful
+              connections, making it easy for anyone to turn their ideas into
+              shared experiences. We aim to make every day an opportunity for
+              adventure, connection, and growth.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-primary-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl font-bold">2024</span>
+                <span className="text-white text-2xl font-bold">2025</span>
               </div>
               <h3 className="text-xl font-semibold text-secondary-300 mb-3">
                 The Beginning
               </h3>
               <p className="text-black-100">
-                Percher was founded with a vision to transform the rental market
-                in Africa, starting with Nigeria.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-primary-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl font-bold">2025</span>
-              </div>
-              <h3 className="text-xl font-semibold text-secondary-300 mb-3">
-                Growth & Launch
-              </h3>
-              <p className="text-black-100">
-                We plan to launch our mobile app and begin connecting thousands
-                of users with their perfect spaces.
+                Leankly was founded with a vision to transform how people
+                connect and share adventures, starting with building the
+                foundation for side questing.
               </p>
             </div>
             <div className="text-center">
@@ -190,11 +181,24 @@ function AboutUs({ onNavigate }: AboutUsProps) {
                 <span className="text-white text-2xl font-bold">2026</span>
               </div>
               <h3 className="text-xl font-semibold text-secondary-300 mb-3">
-                Expansion
+                Launch & Growth
               </h3>
               <p className="text-black-100">
-                Expanding across Africa, bringing our trusted platform to more
-                countries and communities.
+                We're launching our mobile app and connecting thousands of
+                leankers with amazing adventures and experiences.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-primary-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white text-2xl font-bold">2027</span>
+              </div>
+              <h3 className="text-xl font-semibold text-secondary-300 mb-3">
+                Global Expansion
+              </h3>
+              <p className="text-black-100">
+                Expanding worldwide, bringing the joy of side questing to more
+                communities and helping people everywhere turn their ideas into
+                adventures.
               </p>
             </div>
           </div>
@@ -209,12 +213,11 @@ function AboutUs({ onNavigate }: AboutUsProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-secondary-300 mb-6">
-              Meet Our <span className="text-primary-300">Visionary</span>
+              Meet Our <span className="text-primary-300">Leankers</span>
             </h2>
             <p className="text-xl text-black-100 max-w-3xl mx-auto">
-              Leading the revolution in African rental markets with innovation,
-              passion, and a commitment to making housing accessible for
-              everyone.
+              Leading the side questing revolution with innovation, passion, and
+              a commitment to making every day an adventure worth sharing.
             </p>
           </div>
 
@@ -235,17 +238,17 @@ function AboutUs({ onNavigate }: AboutUsProps) {
 
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-secondary-300 mb-2">
-                  Famosa Muyiwa
+                  Olu Famosa
                 </h3>
                 <p className="text-primary-300 font-semibold mb-4 text-lg">
                   CEO & Founder
                 </p>
                 <p className="text-black-100 leading-relaxed mb-6">
-                  A visionary entrepreneur passionate about solving real-world
-                  problems through technology and innovation. With a deep
-                  understanding of the African market, Famosa is dedicated to
-                  transforming how people find and rent properties across the
-                  continent.
+                  A visionary entrepreneur passionate about connecting people
+                  through shared experiences. With a deep understanding of how
+                  technology can bring people together, Famosa is dedicated to
+                  transforming how we discover adventures and build meaningful
+                  connections in our daily lives.
                 </p>
 
                 <div className="flex justify-center space-x-4">
@@ -272,35 +275,8 @@ function AboutUs({ onNavigate }: AboutUsProps) {
         </div>
       </section>
 
-      {/* CTA Section */}
-      {/* <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-secondary-300 mb-6">
-            Join the Percher Community
-          </h2>
-          <p className="text-xl text-black-100 mb-12 max-w-2xl mx-auto">
-            Be part of the revolution in African rental markets. Download our
-            app and experience the future of property rentals.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="#download"
-              className="bg-primary-300 text-white px-8 py-4 rounded-full hover:bg-primary-300/90 inline-block"
-            >
-              Download App
-            </a>
-            <button
-              onClick={() => onNavigate("home")}
-              className="bg-primary-100 text-primary-300 px-8 py-4 rounded-full hover:bg-gray-50 inline-block"
-            >
-              Back to Home
-            </button>
-          </div>
-        </div>
-      </section> */}
-
       {/* Footer */}
-      <Footer onNavigate={onNavigate} />
+      <Footer />
     </>
   );
 }

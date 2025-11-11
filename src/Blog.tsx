@@ -12,7 +12,7 @@ function Blog({ onNavigate }: BlogProps) {
       title: "5 Essential Tips for First-Time Renters in Lagos",
       excerpt:
         "Navigating the rental market in Lagos can be overwhelming for first-time renters. Here are five essential tips to help you find your perfect home.",
-      author: "Percher Team",
+      author: "Leankly Team",
       date: "January 15, 2025",
       category: "Rental Tips",
       readTime: "5 min read",
@@ -45,10 +45,10 @@ function Blog({ onNavigate }: BlogProps) {
     },
     {
       id: 4,
-      title: "Percher's New Features: What's Coming in 2025",
+      title: "Leankly's New Features: What's Coming in 2025",
       excerpt:
         "Get an exclusive look at the exciting new features we're launching to make your rental journey even better.",
-      author: "Percher Team",
+      author: "Leankly Team",
       date: "January 8, 2025",
       category: "Company Updates",
       readTime: "4 min read",
@@ -101,7 +101,7 @@ function Blog({ onNavigate }: BlogProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-secondary-300 mb-6">
-              Percher <span className="text-primary-300">Blog</span>
+              Leankly <span className="text-primary-300">Blog</span>
             </h1>
             <p className="text-xl text-black-100 mb-12 max-w-3xl mx-auto">
               Stay updated with the latest rental tips, market insights, and
