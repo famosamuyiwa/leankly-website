@@ -1,11 +1,7 @@
 import Footer from "./Footer";
 import Navigation from "./Navigation";
 
-interface BlogProps {
-  onNavigate: (page: string) => void;
-}
-
-function Blog({ onNavigate }: BlogProps) {
+function Blog() {
   const blogPosts = [
     {
       id: 1,
@@ -94,7 +90,7 @@ function Blog({ onNavigate }: BlogProps) {
   return (
     <>
       {/* Navigation */}
-      <Navigation onNavigate={onNavigate} currentPage="blog" />
+      <Navigation />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 gradient-bg">
@@ -307,7 +303,7 @@ function Blog({ onNavigate }: BlogProps) {
       </section>
 
       {/* Footer */}
-      <Footer onNavigate={onNavigate} />
+      <Footer />
     </>
   );
 }
