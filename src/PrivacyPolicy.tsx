@@ -23,7 +23,7 @@ function PrivacyPolicy({ onNavigate: _onNavigate }: PrivacyPolicyProps) {
               collect, use, and protect your personal information.
             </p>
             <div className="text-sm text-black-100">
-              <p>Last updated: November 2025</p>
+              <p>Last updated: December 2025</p>
             </div>
           </div>
         </div>
@@ -42,7 +42,9 @@ function PrivacyPolicy({ onNavigate: _onNavigate }: PrivacyPolicyProps) {
                 Leankly ("we," "our," or "us") is committed to protecting your
                 privacy. This Privacy Policy explains how we collect, use,
                 disclose, and safeguard your information when you use our mobile
-                application and related services (collectively, the "Service").
+                application, website, and related services (collectively, the
+                "Service"), which enable people to discover, create, and join
+                side quests, adventures, and shared experiences ("leanks").
               </p>
               <p className="text-black-100">
                 By using our Service, you agree to the collection and use of
@@ -66,10 +68,28 @@ function PrivacyPolicy({ onNavigate: _onNavigate }: PrivacyPolicyProps) {
               <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
                 <li>Name, email address, and phone number</li>
                 <li>Profile information and preferences</li>
-                <li>Payment and billing information</li>
-                <li>Government-issued identification for verification</li>
-                <li>Property details and rental history</li>
+                <li>
+                  Payment and billing information, including credit card
+                  details, billing address, and subscription payment history
+                  (processed securely through third-party payment processors)
+                </li>
+                <li>
+                  Government-issued identification or similar documents for
+                  identity, safety, or age verification where required
+                </li>
+                <li>
+                  Leank participation history, including leanks you create,
+                  join, or interact with
+                </li>
                 <li>Communication preferences</li>
+                <li>
+                  User-generated content, such as photos, descriptions, reviews,
+                  and messages that you share through the Service
+                </li>
+                <li>
+                  Subscription status, plan details, renewal dates, and payment
+                  transaction records
+                </li>
               </ul>
 
               <h3 className="text-xl font-semibold text-secondary-300 mb-3">
@@ -83,7 +103,9 @@ function PrivacyPolicy({ onNavigate: _onNavigate }: PrivacyPolicyProps) {
                 <li>Device type, operating system, and browser information</li>
                 <li>IP address and general location data</li>
                 <li>App usage patterns and preferences</li>
-                <li>Search queries and property views</li>
+                <li>
+                  Search queries and leanks or experiences you view or join
+                </li>
                 <li>Crash reports and performance data</li>
               </ul>
 
@@ -108,11 +130,19 @@ function PrivacyPolicy({ onNavigate: _onNavigate }: PrivacyPolicyProps) {
               </p>
               <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
                 <li>
-                  Provide, maintain, and improve our rental platform services
+                  Provide, maintain, and improve our side questing and social
+                  experience platform
                 </li>
-                <li>Process transactions and manage payments</li>
+                <li>
+                  Process subscription payments, manage billing, and handle
+                  subscription renewals and cancellations
+                </li>
                 <li>Verify user identities and prevent fraud</li>
-                <li>Send notifications about properties and bookings</li>
+                <li>Send notifications about leanks, updates, and messages</li>
+                <li>
+                  Send subscription-related communications, including renewal
+                  reminders, payment confirmations, and billing updates
+                </li>
                 <li>Provide customer support and respond to inquiries</li>
                 <li>Analyze usage patterns to improve user experience</li>
                 <li>Comply with legal obligations and enforce our terms</li>
@@ -139,7 +169,12 @@ function PrivacyPolicy({ onNavigate: _onNavigate }: PrivacyPolicyProps) {
                 providers who assist us in operating our platform, such as:
               </p>
               <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
-                <li>Payment processors for secure transactions</li>
+                <li>
+                  Payment processors and subscription management services for
+                  secure payment processing and subscription handling (we do not
+                  store full credit card numbers; payment data is handled by
+                  PCI-compliant third-party processors)
+                </li>
                 <li>Cloud hosting providers for data storage</li>
                 <li>Analytics services to improve our platform</li>
                 <li>Customer support tools for better service</li>
@@ -203,13 +238,22 @@ function PrivacyPolicy({ onNavigate: _onNavigate }: PrivacyPolicyProps) {
               </p>
               <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
                 <li>Provide our services to you</li>
-                <li>Comply with legal obligations</li>
+                <li>
+                  Maintain subscription and billing records as required by law
+                </li>
+                <li>
+                  Comply with legal obligations (including tax and financial
+                  record-keeping requirements)
+                </li>
                 <li>Resolve disputes and enforce agreements</li>
                 <li>Improve our services</li>
               </ul>
               <p className="text-black-100">
                 When we no longer need your information, we will securely delete
-                or anonymize it in accordance with applicable laws.
+                or anonymize it in accordance with applicable laws. Note that we
+                may retain certain payment and billing records for longer
+                periods as required by law for tax, accounting, or legal
+                compliance purposes.
               </p>
             </div>
 
@@ -292,14 +336,41 @@ function PrivacyPolicy({ onNavigate: _onNavigate }: PrivacyPolicyProps) {
             {/* Children's Privacy */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                10. Children's Privacy
+                10. Children's Privacy and Child Safety Standards
               </h2>
+              <p className="text-black-100 mb-4">
+                Our Service is designed for adults and is not intended for
+                children under 18 years of age. We do not knowingly solicit,
+                collect, or process personal information from anyone under 18,
+                and we do not knowingly allow minors to create accounts or
+                participate in leanks.
+              </p>
+              <p className="text-black-100 mb-4">
+                If we become aware that we have collected personal information
+                from a child under 18, we will take reasonable steps to delete
+                such information and, where appropriate, terminate the
+                associated account. If you are a parent or legal guardian and
+                believe your child has provided us with personal information or
+                is using the Service, please contact us immediately so we can
+                investigate and take appropriate action.
+              </p>
+              <p className="text-black-100 mb-4">
+                In jurisdictions where additional protections apply to children
+                (for example, under the U.S. Children's Online Privacy
+                Protection Act (COPPA) or youth-specific rules under the GDPR),
+                we will handle any related requests in accordance with
+                applicable law. We may request additional information from you
+                to verify your identity and your relationship to the child
+                before fulfilling such requests.
+              </p>
               <p className="text-black-100">
-                Our Service is not intended for children under 18 years of age.
-                We do not knowingly collect personal information from children
-                under 18. If you are a parent or guardian and believe your child
-                has provided us with personal information, please contact us
-                immediately.
+                We also prohibit content or activity on the Service that
+                exploits, harms, or may reasonably be seen as targeting minors,
+                including sexualization of minors, arranging leanks involving
+                minors, or encouraging unsafe behavior by or toward minors. We
+                reserve the right to report suspected child exploitation or
+                abuse to the appropriate authorities and cooperate with law
+                enforcement as required by law.
               </p>
             </div>
 

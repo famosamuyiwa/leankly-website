@@ -23,7 +23,7 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
               using Leankly, you agree to be bound by these terms.
             </p>
             <div className="text-sm text-black-100">
-              <p>Last updated: January 2025</p>
+              <p>Last updated: December 2025</p>
             </div>
           </div>
         </div>
@@ -107,6 +107,10 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
                   Notify us immediately of any unauthorized use of your account
                 </li>
                 <li>Be at least 18 years old to create an account</li>
+                <li>
+                  Not create accounts on behalf of minors or allow minors to use
+                  your account or attend leanks under your account
+                </li>
               </ul>
               <p className="text-black-100">
                 We reserve the right to suspend or terminate accounts that
@@ -283,12 +287,163 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
                 users or third parties. We do not guarantee the safety, quality,
                 or legality of leanks or user interactions.
               </p>
+              <h3 className="text-xl font-semibold text-secondary-300 mb-3 mt-8">
+                7.4 Child Safety and Protection
+              </h3>
+              <p className="text-black-100 mb-4">
+                Leankly is intended for adults only. You must be at least 18
+                years old to use the Service, create an account, or participate
+                in leanks. We do not knowingly allow minors to register or
+                participate in leanks, and we do not provide services directed
+                to children.
+              </p>
+              <p className="text-black-100 mb-4">
+                You agree that you will not use the Service to arrange, promote,
+                or participate in leanks that involve minors, or that could
+                reasonably be seen as exploiting, endangering, or targeting
+                minors. This includes, without limitation, any sexualized
+                content involving minors, encouraging unsafe behavior by or
+                toward minors, or using the platform to contact minors in any
+                way.
+              </p>
+              <p className="text-black-100 mb-4">
+                We reserve the right to suspend or terminate any account, remove
+                content, and report suspected child exploitation, abuse, or
+                trafficking to law enforcement or other appropriate authorities.
+                We may also cooperate with law enforcement investigations as
+                required by applicable law.
+              </p>
+              <p className="text-black-100">
+                If you believe that a user is under 18 or that a leank or
+                interaction on the platform may be putting a child at risk,
+                please report it to us immediately using the contact
+                information provided in these Terms so we can review and take
+                appropriate action.
+              </p>
+            </div>
+
+            {/* Subscriptions and Payments */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-secondary-300 mb-4">
+                8. Subscriptions and Payments
+              </h2>
+
+              <h3 className="text-xl font-semibold text-secondary-300 mb-3">
+                8.1 Subscription Plans
+              </h3>
+              <p className="text-black-100 mb-4">
+                Leankly offers subscription plans that provide access to premium
+                features and enhanced functionality. Subscription plans, pricing,
+                features, and terms are subject to change at our discretion. We
+                will notify you of any material changes to your subscription plan
+                or pricing with reasonable advance notice.
+              </p>
+
+              <h3 className="text-xl font-semibold text-secondary-300 mb-3">
+                8.2 Payment Terms
+              </h3>
+              <p className="text-black-100 mb-4">
+                By subscribing to a paid plan, you agree to pay the subscription
+                fees specified at the time of purchase. Subscription fees are
+                billed in advance on a recurring basis (monthly, quarterly, or
+                annually, depending on your selected plan) and will automatically
+                renew unless cancelled.
+              </p>
+              <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
+                <li>
+                  You authorize us to charge your payment method for all
+                  subscription fees and any applicable taxes
+                </li>
+                <li>
+                  Payment will be processed through secure third-party payment
+                  processors
+                </li>
+                <li>
+                  You are responsible for providing accurate and current payment
+                  information
+                </li>
+                <li>
+                  If payment fails, we may suspend or terminate your subscription
+                  and access to premium features
+                </li>
+                <li>
+                  All fees are non-refundable except as required by law or as
+                  specified in our refund policy
+                </li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-secondary-300 mb-3">
+                8.3 Automatic Renewal
+              </h3>
+              <p className="text-black-100 mb-4">
+                Your subscription will automatically renew at the end of each
+                billing period unless you cancel it before the renewal date. You
+                will be charged the then-current subscription fee for the
+                upcoming billing period. We will send you a reminder before each
+                renewal, but it is your responsibility to cancel if you do not
+                wish to continue.
+              </p>
+
+              <h3 className="text-xl font-semibold text-secondary-300 mb-3">
+                8.4 Cancellation and Refunds
+              </h3>
+              <p className="text-black-100 mb-4">
+                You may cancel your subscription at any time through your account
+                settings or by contacting customer support. Cancellation will take
+                effect at the end of your current billing period, and you will
+                continue to have access to premium features until that time.
+              </p>
+              <p className="text-black-100 mb-4">
+                Refunds are generally not provided for subscription fees already
+                paid, except:
+              </p>
+              <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
+                <li>
+                  As required by applicable law (e.g., consumer protection laws in
+                  certain jurisdictions)
+                </li>
+                <li>
+                  If you cancel within the first 14 days of your initial
+                  subscription and have not used premium features extensively
+                </li>
+                <li>
+                  In cases of technical errors or billing mistakes on our part
+                </li>
+              </ul>
+              <p className="text-black-100">
+                To request a refund, please contact our customer support team
+                with your account details and reason for the request.
+              </p>
+
+              <h3 className="text-xl font-semibold text-secondary-300 mb-3">
+                8.5 Price Changes
+              </h3>
+              <p className="text-black-100 mb-4">
+                We reserve the right to modify subscription prices at any time.
+                Price changes will not affect your current subscription period but
+                will apply to subsequent renewal periods. We will notify you of any
+                price changes at least 30 days in advance, and you may cancel
+                your subscription before the price change takes effect if you do
+                not agree to the new pricing.
+              </p>
+
+              <h3 className="text-xl font-semibold text-secondary-300 mb-3">
+                8.6 Free Trials
+              </h3>
+              <p className="text-black-100">
+                If we offer a free trial period, you may be required to provide
+                payment information to start the trial. Unless you cancel before
+                the trial period ends, your subscription will automatically
+                convert to a paid subscription and you will be charged the
+                applicable subscription fee. You can cancel at any time during
+                the trial period to avoid being charged.
+              </p>
             </div>
 
             {/* Privacy and Data */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                8. Privacy and Data Protection
+                9. Privacy and Data Protection
               </h2>
               <p className="text-black-100 mb-4">
                 Your privacy is important to us. Our collection and use of
@@ -304,7 +459,7 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
             {/* Intellectual Property */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                9. Intellectual Property Rights
+                10. Intellectual Property Rights
               </h2>
               <p className="text-black-100 mb-4">
                 The Service and its original content, features, and
@@ -321,11 +476,11 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
             {/* Disclaimers */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                10. Disclaimers and Limitations
+                11. Disclaimers and Limitations
               </h2>
 
               <h3 className="text-xl font-semibold text-secondary-300 mb-3">
-                10.1 Service Availability
+                11.1 Service Availability
               </h3>
               <p className="text-black-100 mb-4">
                 We strive to provide a reliable service but cannot guarantee
@@ -334,7 +489,7 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
               </p>
 
               <h3 className="text-xl font-semibold text-secondary-300 mb-3">
-                10.2 Third-Party Content
+                11.2 Third-Party Content
               </h3>
               <p className="text-black-100 mb-4">
                 We are not responsible for the accuracy, completeness, or
@@ -343,7 +498,7 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
               </p>
 
               <h3 className="text-xl font-semibold text-secondary-300 mb-3">
-                10.3 User Interactions
+                11.3 User Interactions
               </h3>
               <p className="text-black-100">
                 We facilitate connections between users but are not a party to
@@ -356,7 +511,7 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
             {/* Limitation of Liability */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                11. Limitation of Liability
+                12. Limitation of Liability
               </h2>
               <p className="text-black-100 mb-4">
                 To the maximum extent permitted by law, Leankly shall not be
@@ -381,7 +536,7 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
             {/* Indemnification */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                12. Indemnification
+                13. Indemnification
               </h2>
               <p className="text-black-100">
                 You agree to indemnify and hold harmless Leankly, its officers,
@@ -395,7 +550,7 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
             {/* Termination */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                13. Termination
+                14. Termination
               </h2>
               <p className="text-black-100 mb-4">
                 We may terminate or suspend your account and access to the
@@ -408,18 +563,27 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
                 <li>Harassment or abuse of other users</li>
                 <li>Extended periods of inactivity</li>
                 <li>Creating unsafe or inappropriate leanks</li>
+                <li>Non-payment of subscription fees</li>
               </ul>
-              <p className="text-black-100">
+              <p className="text-black-100 mb-4">
                 Upon termination, your right to use the Service will cease
                 immediately. We may delete your account and data in accordance
                 with our Privacy Policy.
+              </p>
+              <p className="text-black-100">
+                If you have an active subscription, termination of your account
+                does not automatically cancel your subscription. You remain
+                responsible for any outstanding subscription fees. You must
+                cancel your subscription separately to stop recurring charges.
+                No refunds will be provided for the remaining subscription
+                period unless required by law.
               </p>
             </div>
 
             {/* Governing Law */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                14. Governing Law and Dispute Resolution
+                15. Governing Law and Dispute Resolution
               </h2>
               <p className="text-black-100 mb-4">
                 These Terms shall be governed by and construed in accordance
@@ -444,7 +608,7 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
             {/* Changes to Terms */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                15. Changes to Terms
+                16. Changes to Terms
               </h2>
               <p className="text-black-100 mb-4">
                 We reserve the right to modify these Terms at any time. We will
@@ -464,7 +628,7 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
             {/* Contact Information */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-secondary-300 mb-4">
-                16. Contact Information
+                17. Contact Information
               </h2>
               <p className="text-black-100 mb-4">
                 If you have any questions about these Terms of Service, please
