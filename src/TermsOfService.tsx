@@ -288,37 +288,163 @@ function TermsOfService({ onNavigate: _onNavigate }: TermsOfServiceProps) {
                 or legality of leanks or user interactions.
               </p>
               <h3 className="text-xl font-semibold text-secondary-300 mb-3 mt-8">
-                7.4 Child Safety and Protection
+                7.4 Child Safety and Protection - Zero Tolerance for Child Sexual Abuse and Exploitation (CSAE)
               </h3>
+              
               <p className="text-black-100 mb-4">
-                Leankly is intended for adults only. You must be at least 18
-                years old to use the Service, create an account, or participate
-                in leanks. We do not knowingly allow minors to register or
-                participate in leanks, and we do not provide services directed
-                to children.
+                <strong>Leankly has a zero-tolerance policy for child sexual abuse and exploitation (CSAE).</strong> Our Service is intended for adults only. You must be at least 18 years old to use the Service, create an account, or participate in leanks. We do not knowingly allow minors to register or participate in leanks, and we do not provide services directed to children.
               </p>
+
+              <h4 className="text-lg font-semibold text-secondary-300 mb-2 mt-4">
+                Prohibited Conduct
+              </h4>
               <p className="text-black-100 mb-4">
-                You agree that you will not use the Service to arrange, promote,
-                or participate in leanks that involve minors, or that could
-                reasonably be seen as exploiting, endangering, or targeting
-                minors. This includes, without limitation, any sexualized
-                content involving minors, encouraging unsafe behavior by or
-                toward minors, or using the platform to contact minors in any
-                way.
+                You are strictly prohibited from using the Service in any way that involves, facilitates, promotes, or enables child sexual abuse or exploitation. This includes, but is not limited to:
               </p>
+              <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
+                <li>
+                  Creating, uploading, sharing, distributing, or soliciting any
+                  content that depicts, describes, or references child sexual
+                  abuse material (CSAM) or child sexual exploitation
+                </li>
+                <li>
+                  Using the Service to contact, communicate with, groom, or
+                  solicit minors for sexual purposes
+                </li>
+                <li>
+                  Arranging, promoting, or participating in leanks that involve
+                  minors or that could reasonably be seen as exploiting,
+                  endangering, or targeting minors
+                </li>
+                <li>
+                  Creating or sharing content that sexualizes minors or
+                  encourages unsafe behavior by or toward minors
+                </li>
+                <li>
+                  Using the Service to facilitate human trafficking involving
+                  minors
+                </li>
+                <li>
+                  Attempting to circumvent age verification or other child
+                  safety measures
+                </li>
+                <li>
+                  Creating accounts on behalf of minors or allowing minors to
+                  use your account
+                </li>
+              </ul>
+
+              <h4 className="text-lg font-semibold text-secondary-300 mb-2 mt-4">
+                Mandatory Reporting and Law Enforcement Cooperation
+              </h4>
               <p className="text-black-100 mb-4">
-                We reserve the right to suspend or terminate any account, remove
-                content, and report suspected child exploitation, abuse, or
-                trafficking to law enforcement or other appropriate authorities.
-                We may also cooperate with law enforcement investigations as
-                required by applicable law.
+                We are committed to protecting children and will take immediate action against any suspected CSAE activity:
               </p>
+              <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
+                <li>
+                  <strong>Mandatory Reporting:</strong> We will immediately report
+                  any suspected child sexual abuse material, child exploitation,
+                  or grooming activity to the National Center for Missing &
+                  Exploited Children (NCMEC), law enforcement agencies, and
+                  other appropriate authorities as required by law
+                </li>
+                <li>
+                  <strong>Account Termination:</strong> Any account involved in
+                  suspected CSAE activity will be immediately and permanently
+                  terminated without notice or refund
+                </li>
+                <li>
+                  <strong>Content Removal:</strong> All content related to
+                  suspected CSAE will be immediately removed and preserved for
+                  law enforcement investigation
+                </li>
+                <li>
+                  <strong>Law Enforcement Cooperation:</strong> We will fully
+                  cooperate with law enforcement investigations, including
+                  providing account information, content, IP addresses, and
+                  other relevant data as legally required
+                </li>
+                <li>
+                  <strong>Content Scanning:</strong> We employ automated and
+                  manual content scanning technologies to detect and prevent
+                  CSAE-related content and activity
+                </li>
+              </ul>
+
+              <h4 className="text-lg font-semibold text-secondary-300 mb-2 mt-4">
+                User Reporting Obligations
+              </h4>
+              <p className="text-black-100 mb-4">
+                If you encounter any content or activity on the Service that you
+                believe involves child sexual abuse, exploitation, or grooming,
+                you must immediately:
+              </p>
+              <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
+                <li>
+                  Report it to us immediately using the contact information
+                  provided in these Terms or through our in-app reporting
+                  features
+                </li>
+                <li>
+                  Report directly to NCMEC at{" "}
+                  <a
+                    href="https://www.missingkids.org/gethelpnow/cybertipline"
+                    className="text-primary-300 underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    www.missingkids.org/gethelpnow/cybertipline
+                  </a>{" "}
+                  or call 1-800-THE-LOST (1-800-843-5678)
+                </li>
+                <li>
+                  Contact local law enforcement if you believe a child is in
+                  immediate danger
+                </li>
+              </ul>
+              <p className="text-black-100 mb-4">
+                Do not attempt to investigate or handle suspected CSAE activity
+                yourself. Report it immediately to the appropriate authorities.
+              </p>
+
+              <h4 className="text-lg font-semibold text-secondary-300 mb-2 mt-4">
+                Legal Consequences
+              </h4>
+              <p className="text-black-100 mb-4">
+                Violation of these CSAE standards may result in:
+              </p>
+              <ul className="list-disc pl-6 text-black-100 mb-6 space-y-2">
+                <li>Immediate and permanent account termination</li>
+                <li>
+                  Reporting to law enforcement and child protection agencies
+                </li>
+                <li>
+                  Civil and criminal liability under applicable laws, including
+                  but not limited to federal and state laws prohibiting child
+                  sexual abuse material, child exploitation, and human
+                  trafficking
+                </li>
+                <li>
+                  Cooperation with law enforcement investigations and potential
+                  prosecution
+                </li>
+              </ul>
+
+              <p className="text-black-100 mb-4">
+                <strong>
+                  By using the Service, you acknowledge that you understand
+                  these CSAE standards and agree to comply with them. Any
+                  violation will result in immediate termination of your account
+                  and may result in legal action.
+                </strong>
+              </p>
+
               <p className="text-black-100">
-                If you believe that a user is under 18 or that a leank or
-                interaction on the platform may be putting a child at risk,
-                please report it to us immediately using the contact
-                information provided in these Terms so we can review and take
-                appropriate action.
+                If you believe that a user is under 18 or that any content,
+                leank, or interaction on the platform may involve child sexual
+                abuse or exploitation, please report it to us immediately using
+                the contact information provided in these Terms so we can take
+                immediate action and report to the appropriate authorities.
               </p>
             </div>
 
