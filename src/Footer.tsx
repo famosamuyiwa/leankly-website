@@ -32,6 +32,14 @@ function Footer() {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/account-deletion"
+                  className="text-gray-300 hover:text-white"
+                >
+                  Delete Account
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

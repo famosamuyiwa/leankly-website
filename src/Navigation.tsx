@@ -14,6 +14,7 @@ function Navigation({ currentPage }: NavigationProps) {
     const path = location.pathname;
     if (path === "/about") return "about";
     if (path === "/contact") return "contact";
+    if (path === "/account-deletion") return "account-deletion";
     return "home";
   };
 
@@ -69,6 +70,17 @@ function Navigation({ currentPage }: NavigationProps) {
               >
                 Contact
               </Link>
+              <Link
+                to="/account-deletion"
+                onClick={() => setIsMenuOpen(false)}
+                className={`${
+                  isCurrentPage("account-deletion")
+                    ? "text-primary-300"
+                    : "text-black-200 hover:text-primary-300"
+                } transition-colors`}
+              >
+                Delete Account
+              </Link>
             </div>
           </div>
 
@@ -123,6 +135,17 @@ function Navigation({ currentPage }: NavigationProps) {
               } block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors`}
             >
               Contact
+            </Link>
+            <Link
+              to="/account-deletion"
+              onClick={() => setIsMenuOpen(false)}
+              className={`${
+                isCurrentPage("account-deletion")
+                  ? "bg-primary-50 text-primary-300"
+                  : "text-black-200 hover:bg-primary-50 hover:text-primary-300"
+              } block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors`}
+            >
+              Delete Account
             </Link>
           </div>
         </div>

@@ -11,6 +11,7 @@ import Modal from "./Modal";
 import LoaderModal from "./Loader";
 import { apiService } from "./services/api";
 import { ToastManager } from "./Toast";
+import AccountDeletion from "./AccountDeletion";
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -383,6 +384,7 @@ function App() {
     if (path === "/contact") return "contact";
     if (path === "/privacy") return "privacy";
     if (path === "/terms") return "terms";
+    if (path === "/account-deletion") return "account-deletion";
     return "home";
   };
 
@@ -407,6 +409,7 @@ function App() {
           path="/terms"
           element={<TermsOfService onNavigate={navigateTo} />}
         />
+        <Route path="/account-deletion" element={<AccountDeletion />} />
       </Routes>
     </>
   );

@@ -1,4 +1,4 @@
-import { ToastType } from "../SimpleToast";
+import { ToastType } from "../Toast";
 
 declare global {
   interface Window {
