@@ -25,10 +25,14 @@ function AccountDeletion() {
       | React.ChangeEvent<HTMLTextAreaElement>
       | React.ChangeEvent<HTMLSelectElement>
   ) => {
-    const { name, value, type, checked } = event.target;
+    const target = event.target;
+    const { name, value, type } = target;
+    const nextValue =
+      type === "checkbox" && "checked" in target ? target.checked : value;
+
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: nextValue,
     }));
   };
 
